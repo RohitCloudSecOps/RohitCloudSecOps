@@ -10,7 +10,7 @@
 
 <!-- Enterprise Banner -->
 <div align="center">
-  <img src="images/banner.png" alt="RohitCloudSecOps — Enterprise Identity & Cloud Security Engineering" width="100%" />
+  <img src="Images/banner.png" alt="RohitCloudSecOps — Enterprise Identity & Cloud Security Engineering" width="100%" />
 </div>
 
 <br/>
@@ -21,13 +21,13 @@
 
 <!-- Profile Image -->
 <td width="30%" align="center" valign="middle">
-  <img src="images/profile.png" alt="Rohit Yallaling" width="190" />
+  <img src="Images/profile.png" alt="Rohit Yallaling" width="190" />
 </td>
 
 <!-- Identity Block -->
 <td width="70%" valign="middle">
 
-<img src="images/logo.png" alt="RohitCloudSecOps" height="34" />
+<img src="Images/logo.png" alt="RohitCloudSecOps" height="34" />
 
 <h1>Rohit&nbsp;Yallaling</h1>
 
