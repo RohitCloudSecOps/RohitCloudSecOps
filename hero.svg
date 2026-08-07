@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="280" viewBox="0 0 860 280">
+  <defs>
+    <!-- Dark card background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#0e1e35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle blue glow behind avatar -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.35" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:0" />
+    </radialGradient>
+    <!-- Gradient for the name text -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <!-- Cyan-blue gradient for tagline -->
+    <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:1" />
+    </linearGradient>
+    <!-- Avatar circle clip -->
+    <clipPath id="avatarClip">
+      <circle cx="680" cy="130" r="98" />
+    </clipPath>
+    <!-- Avatar border gradient -->
+    <linearGradient id="avatarBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#818cf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <!-- Button gradient -->
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="860" height="280" rx="14" ry="14" fill="url(#bgGrad)" />
+  <!-- Subtle border -->
+  <rect width="860" height="280" rx="14" ry="14" fill="none" stroke="#1e3a5f" stroke-width="1.5" />
+  <!-- Glow behind avatar area -->
+  <ellipse cx="680" cy="130" rx="140" ry="140" fill="url(#glowGrad)" />
+
+  <!-- Role chip / badge -->
+  <rect x="40" y="36" width="240" height="26" rx="13" fill="#1e2d45" />
+  <text x="120" y="54" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#60a5fa" text-anchor="middle">Cloud Security | IAM | DevSecOps | AI</text>
+
+  <!-- Hi greeting -->
+  <text x="40" y="105" font-family="'Segoe UI', sans-serif" font-size="30" font-weight="700" fill="url(#nameGrad)">Hi, I'm Rohit Yallaling 👋</text>
+
+  <!-- Gradient tagline line 1 -->
+  <text x="40" y="142" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="url(#tagGrad)">Building Secure Identity Platforms</text>
+  <!-- Gradient tagline line 2 -->
+  <text x="40" y="166" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="url(#tagGrad)">&amp; Cloud Security Solutions.</text>
+
+  <!-- Description -->
+  <text x="40" y="196" font-family="'Segoe UI', sans-serif" font-size="13" fill="#94a3b8">IAM Engineer · Cloud Security · DevSecOps · 9+ Years Experience</text>
+
+  <!-- CTA Button - View My Work -->
+  <rect x="40" y="218" width="140" height="36" rx="8" fill="url(#btnGrad)" />
+  <text x="110" y="241" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">🔗 View My Work</text>
+
+  <!-- Resume button -->
+  <rect x="190" y="218" width="100" height="36" rx="8" fill="#1e2d45" stroke="#2d4a6e" stroke-width="1" />
+  <text x="240" y="241" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#cbd5e1" text-anchor="middle">📄 Resume</text>
+
+  <!-- Social icons row -->
+  <!-- LinkedIn -->
+  <rect x="300" y="218" width="38" height="36" rx="8" fill="#0A66C2" />
+  <text x="319" y="241" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="white" text-anchor="middle">in</text>
+  <!-- GitHub -->
+  <rect x="346" y="218" width="38" height="36" rx="8" fill="#1a1a2e" stroke="#30363d" stroke-width="1" />
+  <text x="365" y="242" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="white" text-anchor="middle">GH</text>
+  <!-- Email -->
+  <rect x="392" y="218" width="38" height="36" rx="8" fill="#EA4335" />
+  <text x="411" y="241" font-family="'Segoe UI', sans-serif" font-size="14" fill="white" text-anchor="middle">✉</text>
+
+  <!-- Avatar border ring (gradient effect via two circles) -->
+  <circle cx="680" cy="130" r="102" fill="url(#avatarBorder)" />
+  <circle cx="680" cy="130" r="99" fill="#0d1117" />
+
+  <!-- Avatar image -->
+  <image href="https://github.com/RohitCloudSecOps.png" x="582" y="32" width="196" height="196" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice" />
+
+  <!-- Location pill -->
+  <rect x="612" y="238" width="136" height="22" rx="11" fill="#1e2d45" />
+  <text x="680" y="254" font-family="'Segoe UI', sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">📍 Hyderabad, India</text>
+
+  <!-- Available badge -->
+  <rect x="620" y="264" width="120" height="20" rx="10" fill="#064e3b" />
+  <circle cx="634" cy="274" r="4" fill="#22c55e" />
+  <text x="685" y="278" font-family="'Segoe UI', sans-serif" font-size="10.5" fill="#6ee7b7" text-anchor="middle">Open to Opportunities</text>
+</svg>
