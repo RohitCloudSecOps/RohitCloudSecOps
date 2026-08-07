@@ -32,9 +32,9 @@
 <!-- ─────────────  LIVE GITHUB ANALYTICS  ───────────── -->
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=RohitCloudSecOps&show_icons=true&hide_border=true&bg_color=0B1220&title_color=60A5FA&icon_color=A78BFA&text_color=C9D1D9&ring_color=6D28D9&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RohitCloudSecOps&theme=github_dark" height="180" alt="GitHub Stats" />
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RohitCloudSecOps&layout=compact&hide_border=true&bg_color=0B1220&title_color=60A5FA&text_color=C9D1D9&langs_count=6" height="165" alt="Top Languages" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=RohitCloudSecOps&theme=github_dark" height="180" alt="Top Languages" />
 
 <br/><br/>
 
