@@ -2,7 +2,7 @@
 
 ## Architecture
 
-[AWS EFS Multi-AZ Architecture](images/AWS EFS Multi-AZ Shared File System Lab_Scenario.png)
+![AWS EFS Multi-AZ Architecture](images/AWS EFS Multi-AZ Shared File System Lab_Scenario.png)
 
 ## 1. Lab Objective
 
