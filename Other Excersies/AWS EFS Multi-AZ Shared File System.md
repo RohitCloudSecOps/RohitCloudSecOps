@@ -3,7 +3,7 @@
 ## Architecture
 
 <p align="center">
-  <img src="Iages/AWS EFS Multi-AZ Shared File System Lab_Scenarioe.png" width="1000">
+  <img src="Images/AWS EFS Multi-AZ Shared File System Lab_Scenarioe.png" width="1000">
 </p>
 
 ## 1. Lab Objective
