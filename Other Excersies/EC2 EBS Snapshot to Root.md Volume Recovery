@@ -1,15 +1,16 @@
+## Architecture
+
+<p align="center">
+  <img src="./Images/AWS_Cross-Region_EBS_Disaster_Recovery_Workflow.png" width="1000">
+</p>
+
+
+---------------------
 EC2 EBS Snapshot to Root Volume Recovery
 1. Objective
 The objective of this self-paced exercise is to understand how an Amazon EBS snapshot can be used to recreate the storage state of an EC2 instance and investigate whether the snapshot can be used as the root/boot volume of another EC2 instance.
 This exercise is also designed to compare AWS EBS storage behavior with a traditional physical-server scenario where an existing NVMe/SSD containing the operating system, applications, configuration, and data is moved from one physical machine to another.
 ________________________________________
-
-## Architecture
-
-<p align="center">
-  <img src="./Images/AWS_Cross-Region_EBS_Disaster_Recovery_Workflow.png"
-       width="1000">
-</p>
 
 ---------------------------------------------------------
 2. Physical Machine Analogy
