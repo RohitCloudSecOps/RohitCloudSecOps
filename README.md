@@ -328,7 +328,7 @@ flowchart TB
         ↓                       ↓
      AWS IAM                Azure RBAC
         ↓                       ↓
-   Cloud Resources        Cloud Resources
+        Cloud Resources        Cloud Resources
 --------------------------------------------------------
 ____
 # 💼 Professional Experience Summary
