@@ -3,7 +3,7 @@
 ## Architecture
 
 <p align="center">
-  <img src="Other Excersies/Images/AWS EFS Multi-AZ Shared File System Lab_Scenarioe.png" width="1000">
+  <img src="Other Excersies/Images/AWS_EFS_Multi-AZ_Shared_File_System.png" width="1000">
 </p>
 
 ## 1. Lab Objective
