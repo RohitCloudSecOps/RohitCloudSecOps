@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="./Images/AWS_EFS_Multi-AZ_Shared_File_System.png" width="1000">
-  "AWS EFS Multi-AZ Shared File System Architecture"
+  
 </p>
 
 ## 1. Lab Objective
