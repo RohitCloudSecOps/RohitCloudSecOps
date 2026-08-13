@@ -145,13 +145,100 @@ IAM Engineer
 ### IAM Architecture
 
 ```mermaid
-flowchart TD
-    A[User] --> B[Identity Provider]
-    B --> C[SSO / MFA]
-    C --> D[Identity Governance]
-    D --> E[Application / Cloud]
-    E --> F[RBAC / Authorization]
-    F --> G[Logging & Monitoring]
+                         ┌───────────────────────────────┐
+                         │        ENTERPRISE USERS       │
+                         │ Employees • Contractors       │
+                         │ Partners • Service Identities │
+                         └───────────────┬───────────────┘
+                                         │
+                                         ▼
+              ┌──────────────────────────────────────────────┐
+              │              IDENTITY SOURCES                │
+              │ HR System • Active Directory • Directories  │
+              └─────────────────────┬────────────────────────┘
+                                    │
+                           JML / Identity Lifecycle
+                                    │
+                                    ▼
+              ┌──────────────────────────────────────────────┐
+              │          IDENTITY GOVERNANCE / IGA           │
+              │                                              │
+              │              SAILPOINT                       │
+              │                                              │
+              │ • Joiner-Mover-Leaver                        │
+              │ • Access Requests                            │
+              │ • Access Certifications                      │
+              │ • RBAC / Entitlements                        │
+              │ • SoD / Governance                           │
+              │ • Provisioning / Deprovisioning              │
+              └─────────────────────┬────────────────────────┘
+                                    │
+                         Provisioning / SCIM / API
+                                    │
+                    ┌───────────────┴────────────────┐
+                    │                                │
+                    ▼                                ▼
+       ┌───────────────────────┐        ┌───────────────────────┐
+       │   IDENTITY PROVIDER   │        │   PRIVILEGED ACCESS   │
+       │                       │        │                       │
+       │ Microsoft Entra ID    │        │       CyberArk        │
+       │ Okta                  │        │                       │
+       │ Ping Identity         │        │ • PAM                 │
+       │                       │        │ • Vaulting             │
+       │ Authentication        │        │ • JIT Privilege        │
+       │ SSO / Federation      │        │ • Privileged Sessions  │
+       │ MFA                   │        │ • Credential Security  │
+       └───────────┬───────────┘        └───────────┬───────────┘
+                   │                                │
+                   │                                │
+                   ▼                                ▼
+       ┌─────────────────────────────────────────────────────┐
+       │                 ZERO TRUST LAYER                    │
+       │                                                     │
+       │  Verify Explicitly • Least Privilege • Assume       │
+       │  Breach • Device • User • Location • Risk •        │
+       │  Application • Session Context                      │
+       └────────────────────────┬────────────────────────────┘
+                                │
+                                ▼
+       ┌─────────────────────────────────────────────────────┐
+       │              AUTHENTICATION LAYER                   │
+       │                                                     │
+       │  SSO • MFA • Conditional Access • Federation        │
+       │                                                     │
+       │  SAML 2.0 • OAuth 2.0 • OIDC • SCIM                │
+       └────────────────────────┬────────────────────────────┘
+                                │
+                                ▼
+       ┌─────────────────────────────────────────────────────┐
+       │             AUTHORIZATION / ACCESS                  │
+       │                                                     │
+       │  RBAC • ABAC • Policies • Entitlements              │
+       │  Least Privilege • Privileged Access                │
+       └────────────────────────┬────────────────────────────┘
+                                │
+                 ┌──────────────┼──────────────┐
+                 │              │              │
+                 ▼              ▼              ▼
+        ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+        │ Enterprise   │ │ Cloud        │ │ Privileged   │
+        │ Applications │ │ Platforms    │ │ Resources    │
+        │              │ │              │ │              │
+        │ SaaS / Apps  │ │ AWS         │ │ Servers      │
+        │ APIs         │ │ Azure       │ │ Databases    │
+        │ Internal Apps│ │ Kubernetes  │ │ Network      │
+        └──────┬───────┘ └──────┬───────┘ └──────┬───────┘
+               │                │                │
+               └────────────────┼────────────────┘
+                                │
+                                ▼
+       ┌─────────────────────────────────────────────────────┐
+       │             SECURITY / MONITORING                   │
+       │                                                     │
+       │ Audit Logs • Identity Logs • Access Logs            │
+       │ SIEM • Threat Detection • Alerts • Reporting        │
+       │ Compliance • Access Reviews • Forensics             │
+       └─────────────────────────────────────────────────────┘
 ```
 
 ### Cloud Security Architecture
