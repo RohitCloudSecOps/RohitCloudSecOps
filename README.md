@@ -144,7 +144,7 @@ IAM Engineer
 
 ### IAM Architecture
 
-```mermaid
+
                          ┌───────────────────────────────┐
                          │        ENTERPRISE USERS       │
                          │ Employees • Contractors       │
@@ -239,21 +239,120 @@ IAM Engineer
        │ SIEM • Threat Detection • Alerts • Reporting        │
        │ Compliance • Access Reviews • Forensics             │
        └─────────────────────────────────────────────────────┘
-```
+
 
 ### Cloud Security Architecture
 
 ```mermaid
-flowchart TD
-    A[User] --> B[Entra ID / Okta]
-    B --> C[SSO / Federation]
-    C --> D[AWS / Azure]
-    D --> E[IAM / RBAC]
-    E --> F[Cloud Resources]
-    F --> G[Logging / Security Controls]
+flowchart TB
+
+    U["👤 Users / Workloads<br/>Employees • Developers • Service Identities"]
+
+    ID["🪪 Enterprise Identity Layer<br/>Microsoft Entra ID • Okta • Ping Identity"]
+
+    SSO["🔑 SSO / Federation<br/>SAML • OAuth 2.0 • OIDC"]
+
+    MFA["🛡️ Authentication & Risk<br/>MFA • Conditional Access<br/>Device • Location • Risk • Session"]
+
+    GOV["🏛️ Identity Governance<br/>SailPoint • JML • Access Reviews<br/>RBAC • ABAC • Entitlements"]
+
+    AWS["☁️ AWS Identity Layer<br/>IAM • IAM Roles • Policies<br/>STS • Cross-Account Access"]
+
+    AZ["☁️ Azure Identity Layer<br/>Azure RBAC • Managed Identity<br/>Service Principals • PIM"]
+
+    PAM["🔐 Privileged Access<br/>CyberArk • PAM • Vaulting<br/>JIT / JEA • Privileged Sessions"]
+
+    POL["⚖️ Authorization & Policy<br/>Least Privilege • Resource Policies<br/>Policy as Code • Separation of Duties"]
+
+    RES["🏗️ Cloud Resources<br/>EC2 • S3 • RDS • Lambda<br/>Azure VMs • Storage • Key Vault<br/>Kubernetes • Databases • APIs"]
+
+    SEC["🔒 Cloud Security Controls<br/>KMS • Key Vault • Secrets<br/>Security Groups • NSGs<br/>Network Segmentation"]
+
+    LOG["📊 Logging & Monitoring<br/>CloudTrail • Azure Activity Logs<br/>IAM Logs • SIEM • Alerts"]
+
+    COMP["📋 Governance & Compliance<br/>Access Reviews • Audit<br/>Continuous Monitoring • Reporting"]
+
+    U --> ID
+    ID --> SSO
+    SSO --> MFA
+    MFA --> GOV
+
+    GOV --> AWS
+    GOV --> AZ
+
+    AWS --> POL
+    AZ --> POL
+
+    U --> PAM
+    PAM --> POL
+
+    POL --> RES
+    RES --> SEC
+    RES --> LOG
+
+    AWS --> LOG
+    AZ --> LOG
+    PAM --> LOG
+
+    LOG --> COMP
 ```
 
 ---
+┌──────────────────────────────────────────────────────┐
+│                  USERS / WORKLOADS                    │
+│ Employees • Developers • Applications • Services     │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│              ENTERPRISE IDENTITY                      │
+│ Entra ID • Okta • Ping Identity                       │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│          AUTHENTICATION / FEDERATION                  │
+│ SSO • MFA • SAML • OAuth • OIDC • Conditional Access │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│              IDENTITY GOVERNANCE                      │
+│ SailPoint • JML • RBAC • ABAC • Access Reviews       │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+              ┌────────────┴────────────┐
+              ↓                         ↓
+┌────────────────────────┐  ┌────────────────────────┐
+│       AWS CLOUD        │  │      AZURE CLOUD       │
+│                        │  │                        │
+│ AWS IAM                │  │ Azure RBAC             │
+│ IAM Roles              │  │ Managed Identity       │
+│ IAM Policies           │  │ Service Principals     │
+│ STS                    │  │ PIM                    │
+│ Cross-Account Access   │  │ Conditional Access     │
+└───────────┬────────────┘  └───────────┬────────────┘
+            ↓                           ↓
+┌──────────────────────────────────────────────────────┐
+│                 AUTHORIZATION                        │
+│ RBAC • ABAC • Least Privilege • Resource Policies   │
+│ Policy as Code • Separation of Duties                │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│              PRIVILEGED ACCESS                        │
+│ CyberArk • PAM • Vaulting • JIT/JEA • Session Control│
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│                 CLOUD RESOURCES                       │
+│ Compute • Storage • Databases • APIs • Kubernetes    │
+│ EC2 • S3 • RDS • Lambda • Azure VM • Key Vault       │
+└──────────────────────────┬───────────────────────────┘
+                           ↓
+┌──────────────────────────────────────────────────────┐
+│          SECURITY / LOGGING / MONITORING              │
+│ CloudTrail • Azure Activity Logs • SIEM • Alerts     │
+│ Audit • Compliance • Access Reviews • Detection      │
+└──────────────────────────────────────────────────────┘
+-----------------------------------
 
 # ⚙️ Engineering Approach
 
@@ -270,8 +369,23 @@ flowchart TD
 | 🔎 **Root Cause Analysis**     | Investigate failures through logs, evidence, and systematic analysis         |
 | 🧠 **AI-Assisted Engineering** | Apply AI tools to automation, debugging, analysis, and engineering workflows |
 
----
-
+------------------------------------------------------
+              ZERO TRUST
+     ┌─────────────────────────────┐
+     │ Verify Explicitly            │
+     │ Least Privilege              │
+     │ Assume Breach                │
+     │ Continuous Verification      │
+     │ Risk-Based Access            │
+     └──────────────┬──────────────┘
+                    │
+        ┌───────────┴───────────┐
+        ↓                       ↓
+     AWS IAM                Azure RBAC
+        ↓                       ↓
+   Cloud Resources        Cloud Resources
+--------------------------------------------------------
+____
 # 💼 Professional Experience Summary
 
 ### 🔐 IAM Engineering
