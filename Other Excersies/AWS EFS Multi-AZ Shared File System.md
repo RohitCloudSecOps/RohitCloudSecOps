@@ -1,5 +1,9 @@
 # AWS EFS Multi-AZ Shared File System Lab
 
+## Architecture
+
+[AWS EFS Multi-AZ Architecture](images/AWS EFS Multi-AZ Shared File System Lab_Scenario.png)
+
 ## 1. Lab Objective
 
 The objective of this lab is to create an AWS Elastic File System (EFS) and mount the same shared file system across three EC2 instances located in three different Availability Zones.
