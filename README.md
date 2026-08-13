@@ -110,7 +110,7 @@ IAM Engineer
 * Application Onboarding
 * Privileged Access Management (**PAM**)
 
-### Cloud Security
+### Cloud IAM Security
 
 * AWS IAM
 * Azure RBAC
@@ -241,7 +241,7 @@ IAM Engineer
        └─────────────────────────────────────────────────────┘
 
 
-### Cloud Security Architecture
+### Cloud IAM Security Architecture
 
 ```mermaid
 flowchart TB
@@ -298,6 +298,7 @@ flowchart TB
 ```
 
 ---
+##
 ┌──────────────────────────────────────────────────────┐
 │                  USERS / WORKLOADS                    │
 │ Employees • Developers • Applications • Services     │
