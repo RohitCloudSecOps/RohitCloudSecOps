@@ -1,12 +1,341 @@
-<!-- ════════════════════════════════════════════════════════════════
-     ROHIT YALLALING · RohitCloudSecOps
-     Enterprise Identity & Cloud Security Engineering Profile
-════════════════════════════════════════════════════════════════ -->
+# 👋 Rohit Yallaling
 
-<!-- ─────────────  FULL DESIGNED PROFILE  ───────────── -->
-<div align="center">
-  <img src="Images/profile-full.png" alt="Rohit Yallaling — IAM Engineer · Cloud Security Engineer · Platform Security Engineer · DevSecOps Engineer · AI" width="100%" />
-</div>
+### IAM Engineer | Cloud IAM | Identity Security | Cloud Security | DevSecOps
+
+**Hyderabad, India**
+
+Technology professional with **10+ years of experience** spanning application and security validation, software engineering, cloud platforms, **Enterprise IAM**, identity security, and **DevSecOps**. Focused on **Identity & Access Management, Identity Governance, PAM, Identity Lifecycle Management, Cloud IAM, SSO/Federation, cloud security, Infrastructure as Code, automation, and AI-assisted engineering**.
+
+Building expertise across the intersection of **IAM → Identity Security → Cloud Security → DevSecOps → Automation**, with a security-first engineering approach centered on least privilege, governance, automation, and continuous security.
+
+---
+
+## 🧭 Career Journey
+
+```text
+Application & Security Validation Engineer
+2015 – 2019
+        │
+        ▼
+Software Engineer
+2019 – 2020
+        │
+        ▼
+IAM Engineer
+2020 – Present
+```
+
+**Application & Security Validation → Security → Cloud / DevSecOps → IAM & Identity Security**
+
+---
+
+# 🔐 Core IAM Expertise
+
+### Identity & Access Management
+
+`Microsoft Entra ID` `AWS IAM` `SailPoint` `Okta` `Ping Identity` `CyberArk`
+
+`IAM` `IGA` `PAM` `JML` `Identity Lifecycle Management`
+
+`Access Governance` `RBAC` `ABAC` `Least Privilege` `Zero Trust`
+
+### Authentication & Federation
+
+`SSO` `MFA` `SAML 2.0` `OAuth 2.0` `OIDC`
+
+`SCIM` `Federation` `Authentication` `Authorization`
+
+### ☁️ Cloud Security
+
+`AWS` `Azure` `Cloud IAM`
+
+`AWS IAM Roles & Policies` `STS` `Cross-Account Access`
+
+`Azure RBAC` `KMS` `Secrets Management`
+
+`Cloud Logging` `Security Groups` `NSGs` `Network Segmentation`
+
+### ⚙️ DevSecOps & Infrastructure
+
+`Terraform` `Ansible` `Git` `GitHub`
+
+`GitHub Actions` `Jenkins` `CI/CD`
+
+`Docker` `Kubernetes` `Helm`
+
+`Infrastructure as Code` `Policy as Code`
+
+### 🛡️ Security Engineering
+
+`Checkov` `Trivy` `Snyk` `Semgrep`
+
+`SonarQube` `OWASP ZAP` `Falco` `OPA`
+
+`IaC Security` `Container Security` `Security Scanning`
+
+### 🐍 Programming & Automation
+
+`Python` `Bash` `PowerShell`
+
+`REST APIs` `JSON` `YAML`
+
+`Automation` `Scripting`
+
+### 🤖 AI-Assisted Engineering
+
+`Claude` `Cursor`
+
+`AI-Assisted Automation`
+
+`AI-Assisted Debugging`
+
+`Log / Error Analysis`
+
+---
+
+# 🏗️ IAM & Identity Security Capabilities
+
+### Identity Security
+
+* Identity Lifecycle Management
+* Joiner-Mover-Leaver (**JML**) workflows
+* Identity Governance and Administration (**IGA**)
+* Access Governance
+* Role-Based Access Control (**RBAC**)
+* Attribute-Based Access Control (**ABAC**)
+* Least Privilege
+* Zero Trust
+* SSO / MFA
+* Identity Federation
+* Application Onboarding
+* Privileged Access Management (**PAM**)
+
+### Cloud Security
+
+* AWS IAM
+* Azure RBAC
+* Cloud IAM
+* Cross-Account Access
+* IAM Policies
+* Trust Relationships
+* AWS STS
+* KMS
+* Cloud Logging
+* Network Segmentation
+* Security Groups / NSGs
+* Identity-centric cloud security
+
+### DevSecOps
+
+* Terraform
+* Infrastructure as Code
+* CI/CD Security
+* Policy as Code
+* IaC Security
+* Container Security
+* Security Scanning
+* GitHub Actions
+* Kubernetes Security
+* Continuous Security Automation
+
+---
+
+# 🏛️ Architecture Knowledge
+
+### IAM Architecture
+
+```mermaid
+flowchart TD
+    A[User] --> B[Identity Provider]
+    B --> C[SSO / MFA]
+    C --> D[Identity Governance]
+    D --> E[Application / Cloud]
+    E --> F[RBAC / Authorization]
+    F --> G[Logging & Monitoring]
+```
+
+### Cloud Security Architecture
+
+```mermaid
+flowchart TD
+    A[User] --> B[Entra ID / Okta]
+    B --> C[SSO / Federation]
+    C --> D[AWS / Azure]
+    D --> E[IAM / RBAC]
+    E --> F[Cloud Resources]
+    F --> G[Logging / Security Controls]
+```
+
+---
+
+# ⚙️ Engineering Approach
+
+| Principle                      | Focus                                                                        |
+| ------------------------------ | ---------------------------------------------------------------------------- |
+| 🔐 **Least Privilege**         | Minimize unnecessary access and permissions                                  |
+| 🛡️ **Zero Trust**             | Verify identity, context, and authorization continuously                     |
+| 🔒 **Security by Design**      | Integrate security into architecture and engineering workflows               |
+| 🔄 **Identity Lifecycle**      | Govern identity access from Joiner to Mover to Leaver                        |
+| 🏗️ **Infrastructure as Code** | Manage infrastructure consistently through code                              |
+| 📜 **Policy as Code**          | Automate security and compliance controls                                    |
+| 🤖 **Automation**              | Reduce manual identity and security operations                               |
+| 🔁 **Continuous Security**     | Integrate security throughout CI/CD and cloud operations                     |
+| 🔎 **Root Cause Analysis**     | Investigate failures through logs, evidence, and systematic analysis         |
+| 🧠 **AI-Assisted Engineering** | Apply AI tools to automation, debugging, analysis, and engineering workflows |
+
+---
+
+# 💼 Professional Experience Summary
+
+### 🔐 IAM Engineering
+
+Experience across **Enterprise IAM, Identity & Access Management, Cloud IAM, Identity Governance, and Identity Security**, including:
+
+* Microsoft Entra ID
+* AWS IAM
+* SailPoint
+* Okta
+* Ping Identity
+* CyberArk
+* JML and Identity Lifecycle Management
+* RBAC / ABAC
+* SSO / MFA
+* SAML / OAuth 2.0 / OIDC / SCIM
+* Access Governance
+* Least Privilege
+* Cloud IAM and authorization
+
+### ☁️ Software Engineering / DevSecOps
+
+Technical exposure across:
+
+* AWS / Azure
+* Terraform
+* Ansible
+* Git / GitHub
+* Jenkins
+* GitHub Actions
+* CI/CD
+* Docker
+* Kubernetes
+* Security Scanning
+* Infrastructure as Code Security
+* Policy as Code
+
+### 🧪 Application & Security Validation
+
+Background spanning:
+
+* Functional Validation
+* Integration Testing
+* Regression Testing
+* Security Validation
+* Troubleshooting
+* Log Analysis
+* Root Cause Analysis
+* Defect Analysis
+* Release Qualification
+
+---
+
+# 🧰 Technology Stack
+
+### 🔐 IAM
+
+![Microsoft Entra ID](https://img.shields.io/badge/Microsoft%20Entra%20ID-0078D4?style=flat-square\&logo=microsoft\&logoColor=white)
+![AWS IAM](https://img.shields.io/badge/AWS%20IAM-232F3E?style=flat-square\&logo=amazonaws\&logoColor=white)
+![SailPoint](https://img.shields.io/badge/SailPoint-00A4A6?style=flat-square)
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=flat-square\&logo=okta\&logoColor=white)
+![Ping Identity](https://img.shields.io/badge/Ping%20Identity-0073CF?style=flat-square)
+![CyberArk](https://img.shields.io/badge/CyberArk-1A1A1A?style=flat-square)
+
+**Microsoft Entra ID · AWS IAM · SailPoint · Okta · Ping Identity · CyberArk · IAM · IGA · PAM**
+
+### 🪪 Identity
+
+`RBAC` `ABAC` `JML` `IGA` `PAM` `SSO` `MFA`
+
+`SAML 2.0` `OAuth 2.0` `OIDC` `SCIM` `Federation`
+
+`Identity Lifecycle Management` `Access Governance` `Least Privilege`
+
+### ☁️ Cloud
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square\&logo=amazonaws\&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square\&logo=microsoftazure\&logoColor=white)
+
+`AWS` `Azure` `Cloud IAM` `KMS` `STS`
+
+`IAM Roles & Policies` `Azure RBAC` `Cross-Account Access`
+
+### ⚙️ DevSecOps
+
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square\&logo=terraform\&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square\&logo=ansible\&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square\&logo=githubactions\&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square\&logo=jenkins\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square\&logo=kubernetes\&logoColor=white)
+
+`Terraform` `Ansible` `Git` `GitHub` `GitHub Actions` `Jenkins`
+
+`CI/CD` `Docker` `Kubernetes` `Helm`
+
+`Infrastructure as Code` `Policy as Code`
+
+### 🛡️ Security
+
+`Checkov` `Trivy` `Snyk` `Semgrep`
+
+`SonarQube` `OWASP ZAP` `Falco` `OPA`
+
+`IaC Security` `Container Security` `Security Scanning`
+
+### 🐍 Programming & Automation
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-121011?style=flat-square\&logo=gnubash\&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square\&logo=powershell\&logoColor=white)
+
+`Python` `Bash` `PowerShell` `REST APIs` `JSON` `YAML`
+
+`Automation` `Scripting`
+
+### 🤖 AI-Assisted Engineering
+
+`Claude` `Cursor`
+
+`AI-Assisted Automation` · `AI-Assisted Debugging` · `Log / Error Analysis`
+
+---
+
+# 📊 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=RohitCloudSecOps&show_icons=true&hide_border=true&rank_icon=github" height="165" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RohitCloudSecOps&hide_border=true" height="165" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RohitCloudSecOps&layout=compact&hide_border=true&langs_count=8" height="165" />
+</p>
+
+---
+
+# 🔗 Connect With Me
+
+**GitHub:** [RohitCloudSecOps](https://github.com/RohitCloudSecOps)
+
+**Portfolio:** [rohitcloudsecops.in](https://rohitcloudsecops.in)
+
+---
+
+<p align="center">
+
+**IAM • Identity Security • Cloud IAM • Cloud Security • DevSecOps • Automation**
+
+</p>
+
 
 <br/>
 
