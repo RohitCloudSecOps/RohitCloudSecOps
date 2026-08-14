@@ -298,6 +298,13 @@ flowchart TB
 ```
 
 ----------------------------------------------------------------------
+### Enterprise IAM & Identity Security Architecture
+
+<p align="center">
+  <img src="./Images/Enterprise_Architecture _IAM_Implementation.png" alt="Enterprise IAM and Identity Security Architecture" width="100%">
+</p>
+
+---------------------------------------------------------------------
 
 # ⚙️ Engineering Approach
 
